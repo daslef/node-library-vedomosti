@@ -1,0 +1,32 @@
+{
+  "name": "@daslef/node-library",
+  "version": "1.0.0",
+  "description": "vedomosti news wrapper",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "dev": "tsx index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daslef/node-library-vedomosti.git"
+  },
+  "keywords": [
+    "parser",
+    "vedomosti"
+  ],
+  "author": "Lex T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daslef/node-library-vedomosti/issues"
+  },
+  "homepage": "https://github.com/daslef/node-library-vedomosti#readme",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
