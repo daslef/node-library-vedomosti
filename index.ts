@@ -31,5 +31,4 @@ async function getNews({ category, fields }: IGetParams) {
     category: "business",
     fields: ["title", "description", "pubDate", "link", "author"],
   });
-  console.log(news);
 })();
