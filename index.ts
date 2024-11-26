@@ -3,7 +3,7 @@ import { IGetParams, NewsResponse, Field } from "./types";
 const RssJsonAPI = "https://api.rss2json.com/v1/api.json?rss_url";
 const VedomostiAPI = "https://www.vedomosti.ru/rss/rubric";
 
-async function getNews({ category, fields }: IGetParams) {
+export default async function getNews({ category, fields }: IGetParams) {
   const url = `${RssJsonAPI}=${VedomostiAPI}/${category}`;
   try {
     const response = await fetch(url);
@@ -25,11 +25,3 @@ async function getNews({ category, fields }: IGetParams) {
     console.error(error);
   }
 }
-
-(async () => {
-  const news = await getNews({
-    category: "business",
-    fields: ["title", "description", "pubDate", "link", "author"],
-  });
-  console.log(news);
-})();
