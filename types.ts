@@ -7,7 +7,7 @@ type Field = keyof Item;
 
 type Enclosure = {
   link: string;
-  type: "image/jpeg" | "image/jpg" | "image/png";
+  type: "image/jpeg" | "image/png";
 };
 
 type Item = {
